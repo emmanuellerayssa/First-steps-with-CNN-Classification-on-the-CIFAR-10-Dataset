@@ -4,6 +4,10 @@
 
 Hello world, today I'm coming with my first repository on this plateform. The goal is to try a simple classification task with the CIFAR-10 Dataset in order to understand better how CNNs work. The CIFAR 10 Dataset is a set of 60 000 tiny images (32 x 32) coming from 10 various classes : airplane, automobile, bird, cat, deer, dog, frog, horse, ship and truck as we can see down there. So together, we'll try to develop a deep learning model able to classify a new image in the right class.
 
+<p float="left">
+    <img src="Images/sample.PNG" width="425"/> 
+</p>
+
 ## PROJECT
 This repository contains 2 main files: 
 
