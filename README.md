@@ -18,7 +18,7 @@ This repository contains 2 main files:
 I trained the model for more than 600 epochs. You will find the saved models [best_model.hdf5 and saved_model.hdf5] up there. Don't hesitate to download it and load the weights if needed.
 
 ## RESULTS
-Our model has an accuracy of 0.76 the test set. This is not the best result in the world but it's a good start. 
+Our model has an accuracy of 0.77 the test set. This is not the best result in the world but it's a good start. 
 
 At the beginning, the loss curve was smoothly going down while the accuracy curve was going up for both the training and test sets.
 <p float="left">
