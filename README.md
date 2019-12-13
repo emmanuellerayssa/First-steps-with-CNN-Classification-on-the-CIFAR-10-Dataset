@@ -25,24 +25,23 @@ At the beginning, the loss curve was smoothly going down while the accuracy curv
     <img src="Images/loss_start.png" width="425"/> 
 </p>
 
-Later, the losses started oscillating a lot.
+Later, the losses started oscillating a lot. (Don't mind the number of epochs here. I trained the model on google colab so I had to reload the model everytime the memory was full)
 <p float="left">
     <img src="Images/loss.png" width="425"/> 
 </p>
-(Don't mind the number of epochs here. I trained the model on google colab so I had to reload the model everytime the memory was full)
 
 
 Here is the confusion matrix obtained at the end of the last epoch. Again, don't mind the number of epochs here. I trained the model on google colab so I had to reload the model everytime the memory was full
 <p float="left">
     <img src="Images/confusion_matrix.png" width="425"/> 
 </p>
-
 As we can see on the confusion matrix above, the model struggles when it comes to the cat class (54%). Some cat images are classified as dogs,frogs and sometimes horses or deers. Moreover, some dogs images are classified as cats and some bird images, as frogs, deers or dogs. However, the model works pretty well when it comes to the frog class(0.9), the truck class (0.88) or the automobile class.
 
 
 Here is a visual showing the prediction performed by the trained model on some test images.
 <p float="left">
-    <img src="Images/results.PNG" width="700"/> 
+    <img src="Images/results.PNG" width="800"/> 
 </p>
 
 ## IMPROVEMENT IDEAS
+The results we obtained are more or less satisfying. Some classes are pretty well handled by the model while others are pretty tricky. The good news is that there is always room for improvement. So, to improve our model, we can try to play with the drop out and batchnormalization layers or to eventually add some more layers to the current.
