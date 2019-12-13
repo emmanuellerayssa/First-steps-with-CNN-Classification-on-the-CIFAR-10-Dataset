@@ -11,12 +11,36 @@ Hello world, today I'm coming with my first repository on this plateform. The go
 ## PROJECT
 This repository contains 2 main files: 
 
-¤ CIFAR-10 Classification which is a notebook that describes the whole process: how to collect data, how to preprocess those data and create a dataset, how to build, train and test our deep learning model.
+¤ CIFAR_10_Classification.ipynb which is a notebook that describes the whole process: how to collect data, how to preprocess those data and create a dataset, how to build, train and test our deep learning model.
 
-¤ visual callebacks which is a python file that contains the callbacks I used to display the loss and accuracy curves as well as the confusion matrix at the end of each epoch. This is a great tool to see how our CNN behaves with time.
+¤ visual_callbacks.py which is a python file that contains the callbacks I used to display the loss and accuracy curves as well as the confusion matrix at the end of each epoch. This is a great tool to see how our CNN behaves with time.
 
-For more information, check the article I wrote on medium by clicking [here]
+I trained the model for more than 600 epochs. You will find the saved models [best_model.hdf5 and saved_model.hdf5] up there. Don't hesitate to download it and load the weights if needed.
 
 ## RESULTS
-Our model has an accuracy of 0.76 on the training set and 0.72 on the test set. This is not the best result in the world but it's a good start. Here are some results for some test images.
+Our model has an accuracy of 0.76 the test set. This is not the best result in the world but it's a good start. 
+
+At the beginning, the loss curve was smoothly going down while the accuracy curve was going up for both the training and test sets.
+<p float="left">
+    <img src="Images/loss_start.png" width="425"/> 
+</p>
+
+Later, the losses started oscillating a lot.(Don't mind the number of epochs here. I trained the model on google colab so I had to reload the model everytime the memory was full)
+<p float="left">
+    <img src="Images/loss.png" width="425"/> 
+</p>
+
+Here is the confusion matrix obtained at the end of the last epoch.
+<p float="left">
+    <img src="Images/confusion_matrix.png" width="425"/> 
+</p>
+
+As we can see on the confusion matrix above, the model struggles when it comes to the cat class (54%). Some cat images are classified as dogs,frogs and sometimes horses or deers. Moreover, some dogs images are classified as cats and some bird images, as frogs, deers or dogs. However, the model works pretty well when it comes to the frog class(0.9), the truck class (0.88) or the automobile class.
+
+Here is a visual showing the prediction performed by the trained model on some test images.
+<p float="left">
+    <img src="Images/results.PNG" width="425"/> 
+</p>
+
+## IMPROVEMENT IDEAS
 
