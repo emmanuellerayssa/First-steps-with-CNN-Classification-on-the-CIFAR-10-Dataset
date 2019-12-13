@@ -39,7 +39,7 @@ As we can see on the confusion matrix above, the model struggles when it comes t
 
 Here is a visual showing the prediction performed by the trained model on some test images.
 <p float="left">
-    <img src="Images/results.PNG" width="425"/> 
+    <img src="Images/results.PNG" width="1000"/> 
 </p>
 
 ## IMPROVEMENT IDEAS
